@@ -22,7 +22,7 @@ else:
     python3 get-pip.py --force-reinstall
 
     #install colab's dependencies
-    python3 -m pip install setuptools ipython ipython_genutils ipykernel jupyter_console prompt_toolkit httplib2 astor
+    python3 -m pip install setuptools ipython traitlets==5.7.1 ipython_genutils ipykernel jupyter_console prompt_toolkit httplib2 astor
 
     #minor cleanup
     sudo apt autoremove
@@ -36,5 +36,5 @@ else:
         file.write(command)
     subprocess.run(['bash','install_python.sh'])
 
-    #restart environment so you don't have to do it manually
-    os.kill(os.getpid(), 9)
+    print("Manually restart the runtime and the new version should load.")
+    
