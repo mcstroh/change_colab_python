@@ -12,7 +12,7 @@ To install Python 3.11 run the following in Colab:
 ```
 Restart the runtime under **Runtime** -> **Restart runtime**.
 
-You can check that version of Python by typing the following:
+You can check the current version of Python by typing the following:
 ```
 import sys
 print(sys.version)
