@@ -36,5 +36,9 @@ else:
         file.write(command)
     subprocess.run(['bash','install_python.sh'])
 
+    print("\n" + "="*50 + "\n")
     print("Manually restart the runtime and the new version should load.")
-    
+    print(" - Click on the RunTime menu at the top of the screen.")
+    print(" - Choose 'Restart runtime'")
+    print(" - Click 'Yes' to accept.")
+    print(" - Next time you run a code cell, Colab will connect to the new version of Python.")
