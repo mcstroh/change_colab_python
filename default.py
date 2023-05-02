@@ -14,7 +14,7 @@ else:
     sudo apt-get install pythonX.XX-venv binfmt-support #recommended in install logs of the command above
 
     #change alternatives
-    sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
+    sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
     sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/pythonX.XX 2
 
     # install pip
@@ -28,7 +28,7 @@ else:
     sudo apt autoremove
 
     #link to the old google package
-    ln -s /usr/local/lib/python3.8/dist-packages/google /usr/local/lib/pythonX.XX/dist-packages/google
+    ln -s /usr/local/lib/python3.10/dist-packages/google /usr/local/lib/pythonX.XX/dist-packages/google
     #this is just to verify if X.XX folder was indeed created
     ls /usr/local/lib/pythonX.XX/
     """
