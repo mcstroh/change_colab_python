@@ -22,7 +22,7 @@ else:
     python3 get-pip.py --force-reinstall
 
     #install colab's dependencies
-    python3 -m pip install setuptools ipython traitlets==5.7.1 ipython_genutils ipykernel jupyter_console prompt_toolkit httplib2 astor
+    python3 -m pip install setuptools ipython traitlets==5.7.1 ipython_genutils ipykernel jupyter_console prompt_toolkit httplib2 astor numpy pandas
 
     #minor cleanup
     sudo apt autoremove
